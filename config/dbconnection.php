@@ -4,7 +4,7 @@
 $DOMAIN = "localhost";
 $USER = "root";
 $PASSWORD = "";
-$DB = "zmsdb";
+$DB = "tmsc";
 
 //Databese connection
 $con = mysqli_connect($DOMAIN, $USER, $PASSWORD, $DB);
