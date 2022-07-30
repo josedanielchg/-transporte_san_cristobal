@@ -39,7 +39,7 @@
                 </div>
                 <img src="img/buses.jpg" class="d-block w-100" alt="...">
             </div>
-            
+
             <div class="carousel-item">
                 <div class="carousel-item-text">
                     <span>
@@ -72,11 +72,11 @@
                     <div class="col-md-6">
                     <div class="card-body empresa-elements-container-text">
                         <h5 class="card-title text-center">Ruta</h5>
-                        <p class="card-text">(=: Punto de inicio: Las Lomas</p>
+                        <p class="card-text">[icon] Punto de inicio: Las Lomas</p>
                         <li>Punto intermedio 1</li>
                         <li>Punto intermedio 2</li>
-                        <p class="card-text">(=: Punto de Final: Santa Tereza</p>
-                        <p class="text-end"><span class="empresa-elements-costo">$$ Costo:</span> 2000 COP</p>
+                        <p class="card-text">[icon] Punto de Final: Santa Tereza</p>
+                        <p class="text-end"><span class="empresa-elements-costo">[icon] Costo:</span> 2000 COP</p>
                     </div>
                     </div>
                 </div>

@@ -3,17 +3,69 @@ body{
     font-style: normal;
 }
 
-/* Css de menu.php */
+h1,h2,h3,h4,h5{
+    color: #1C0764;
+}
+
+/* Css from index.php */
+
+.background-index{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.search-form__form-container{
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+.results__item-container{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.results__item{
+    padding: 15px;
+    font-size: 14px;
+}
+
+.results__item li{
+    margin-left: 20px;
+}
+
+.results__item-puntosDe{
+    color: #1C0764;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+    
+.search-form__form-container button{/* button .search-form__submit-bttn */
+    background: #1C0764;
+    color: #04E7BE;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* Css from index.php end */
+
+/* Css from menu.php */
 
 .menu__logo{
     width: 71px;
     height: 71px;
 }
 
-/* Css de menu.php end */
+/* Css from menu.php end */
 
 
-/* Css de empresa.php */
+/* Css from empresa.php */
 
 .empresa-elements-container-text{
     font-size: 14px;
@@ -60,4 +112,4 @@ body{
 }
 
 
-/* Css de empresa.php end */
+/* Css from empresa.php end */

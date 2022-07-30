@@ -6,95 +6,82 @@
 
 <?php include_once('includes/header.php');?>
 
-<div class="container">
-
-    <!-- Search Container -->
-    <div class="search-form">
-
-        <!-- Search Header -->
-        <div class="search-form__header">
-            <h3 class="search-form__title">Escribe tú ruta</h3>
-        </div>
-
-        <!-- Search Body -->
-        <div class="search-form__body">
-            <form action="#" class="search-form__form">
-
-                <!-- From input -->
+<div>
+    <img src="img/mapa.png" alt="" class="background-index">
+    <div class="container">
+        <div class="row justify-content-center" style="padding: 40px; margin: 0px;">
+            <div class="col-4">
+                <!-- Search Container -->
                 <div class="search-form__form-container">
-                    <label for="from">
-                        <span class="search-form__icon">[icon] Desde:</span>
-                        <input type="text" name="from" id="from" placeholder="Desde">
-                    </label>
+                    <div class="card" style="margin: 0px; background: rgba(255, 255, 255, 0); border: none">
+                        <!-- Search Header -->
+                        <div class="card-header" style="background: #1C0764;">
+                            <h4 style="color: white; padding: 0px; margin: 0px;">Escribe tú ruta:</h4> 
+                        </div>
+                        <!-- Search Body -->
+                        <div class="card-body">
+                            <form>
+                                <!-- From input -->
+                                <div class="mb-3 search-form__icon">
+                                    <label class="form-label">[icon] Desde:</label>
+                                    <input type="text" class="form-control" placeholder="Desde:">
+                                </div>
+                                <!-- To input -->
+                                <div class="mb-3 search-form__icon">
+                                    <label class="form-label">[icon] Hasta:</label>
+                                    <input type="text" class="form-control" placeholder="Hasta:">
+                                </div>
+                                <!-- Parada Select -->
+                                <div class="mb-3 search-form__icon">
+                                    <label class="form-label">[icon] Seleccionar punto intermedio:</label>
+                                    <select class="form-select search-form__select-stop">
+                                        <option value="">Selecciona una parada</option>
+                                    </select>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn search-form__submit-bttn">Buscar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>  
                 </div>
-
-                <!-- To input -->
-                <div class="search-form__form-container">
-                    <label for="to">
-                        <span class="search-form__icon">[icon] Hasta:</span>
-                        <input type="text" name="to" id="to" placeholder="Hasta">
-                    </label>
-                </div>
-
-                <!-- Parada Select -->
-                <div class="search-form__form-container">
-                    <label for="stop">
-                        <span class="search-form__icon">[icon] Seleccionar punto intermedio:</span>
-                        <select name="stop" id="stop" class="search-form__select-stop">
-                            <option value="">Selecciona una parada</option>
-
-                            <!-- TODO: agregar todas las paradas con un foreach en php -->
-                        </select>
-                    </label>
-                </div>
-                
-                <div class="search-form__form-container">
-                    <input type="submit" value="Buscar" class="search-form__submit-bttn">
-                </div>
-
-            </form>
-        </div>
-    </div>
-
-
-    <!-- Results -->
-    <div class="results">
-        <div class="results__tittle">Resultados:</div>
-
-        <!-- Results items-->
-        <!-- TODO: agregar todas los resultados con un foreach en php -->
-        <div class="results__item">
-            <div class="results__item-container">
-                <h3 class="results__item-title">
-                    [icon] Name of Company
-                </h3>
-    
-                <span class="results__item-from">
-                    <strong>[icon] Punto de inicio: </strong>
-                    Las Lomas
-                </span>
-    
-                <ul class="results__item-intermediate-list">
-                    <li>Punto intermedio 1</li>
-                    <li>Punto intermedio 2</li>
-                    <!-- TODO: agregar todas los puntos intermedios con un foreach en php -->
-                </ul>
-    
-                <span class="results__item-to">
-                    <strong>[icon] Punto de final: </strong>
-                    Santa Teresa
-                </span>
             </div>
 
-            <!-- Cost item -->
-            <div class="results__item-container">
-                <strong>[icon] Costo: </strong>
-                2.000 COP
+            <div class="col-6" >
+                <!-- Results -->
+                <div class="results__item-container">
+                    <!-- results__tittle -->
+                    <div class="results__tittle">
+                        <h3> Resultados: </h3>
+                    </div>
+                    <!-- results__item -->
+                    <!-- TODO: agregar todas los resultados con un foreach en php -->
+                    <div class="card">
+                        <div class="results__item">
+                            <h5>[icon] Ruta</h5>
+                            <p class="results__item-puntosDe">[icon] Punto de inicio: Las Lomas</p>
+                            <li>Punto intermedio 1</li>
+                            <li>Punto intermedio 2</li>
+                            <!-- TODO: agregar todas los puntos intermedios con un foreach en php -->
+                            <p class="results__item-puntosDe">[icon] Punto de Final: Santa Tereza</p>
+                            <p class="text-end"><span class="empresa-elements-costo">[icon] Costo:</span> 2000 COP</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="results__item">
+                            <h5>[icon] Ruta</h5>
+                            <p class="results__item-puntosDe">[icon] Punto de inicio: Las Lomas</p>
+                            <li>Punto intermedio 1</li>
+                            <li>Punto intermedio 2</li>
+                            <!-- TODO: agregar todas los puntos intermedios con un foreach en php -->
+                            <p class="results__item-puntosDe">[icon] Punto de Final: Santa Tereza</p>
+                            <p class="text-end"><span class="empresa-elements-costo">[icon] Costo:</span> 2000 COP</p>
+                        </div>
+                    </div>
+                    <!-- End Results items-->
+                </div>  
+                <!-- End Results -->
             </div>
         </div>
-        <!-- End Results items-->
-
     </div>
-    <!-- End Results -->
-
 </div>
