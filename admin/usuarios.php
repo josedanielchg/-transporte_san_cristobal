@@ -11,9 +11,67 @@
     if (strlen($_SESSION['tmsc_id'] == 0)):
         header('location:logout.php');
     else:
+        $res = mysqli_query($con,"SELECT * FROM users ORDER BY id DESC");
 ?>
 
 <?php include_once('includes/header.php');?>
 
+<div class="container">
+    <div class="row">
+
+        <!-- DATA TABLE START -->
+        <div class="col-12 mt-5">
+            
+            <!-- CARD START -->
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Manage Animals</h4>
+                    <a href="crear-usuario.php" class="btn btn-primary btn-m">Create</a>
+                    
+                    <div class="data-tables">
+                        <table class="table text-center">
+                            
+                            <!-- TABLE HEAD -->
+                            <thead class="bg-light text-capitalize">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Rol</th>
+                                    <th>Fecha de Creación</th>
+                                    <th>Acción</th>
+                                </tr>
+                            </thead>
+                            <!-- TABLE END HEAD -->
+
+                            <!-- TABLE BODY -->
+                            <tbody>
+                                <?php while ( $row = mysqli_fetch_array($res) ): ?>
+                                    <tr data-expanded="true">
+                                        <td><?php echo $row['id'];?></td>
+                                        <td><?php echo $row['username'];?></td>
+                                        <td><?php echo $row['email'];?></td>
+                                        <td><?php echo $row['role_id'];?></td>
+                                        <td><?php echo $row['creation_date'] ?? "2022-05-04";?></td>
+                                        <td>
+                                            <a href="editar-detalles-usuario.php?edit_id=<?php echo $row['id'];?>" class="btn btn-primary btn-xs">Edit</a>
+                                            <a href="manage-animals.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-xs">Delete</a>
+                                        </td>
+                                    </tr>
+                                <?php endwhile; ?>
+                            </tbody>
+                            <!-- TABLE END BODY -->
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD END -->
+
+        </div>
+        <!-- DATA TABLE END -->
+
+    </div>
+</div>
 
 <?php endif; ?>

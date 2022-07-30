@@ -58,8 +58,8 @@
                 <!-- Password input -->
                 <div class="login__input-container">
                     <label for="password">
-                        <span class="login__icon">[icon] password:</span>
-                        <input type="text" name="password" id="password" placeholder="Password">
+                        <span class="login__icon">[icon] Password:</span>
+                        <input type="password" name="password" id="password" placeholder="Password">
                     </label>
                 </div>
 

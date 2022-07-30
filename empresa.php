@@ -1,7 +1,7 @@
 <?php
     include_once('config/global.php');
 
-    // TODO: change "Empresa" in title from the actual name of the company
+    // TODO: change "Empresa" in title from the actual name of the company with php dynamically
     $title = "Empresa - " . SITE_TITLE;
 ?>
 
