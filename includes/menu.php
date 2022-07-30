@@ -1,7 +1,6 @@
 <!-- Menu -->
 
 <nav class="menu">
-    <link rel="stylesheet" href="includes/menu/menu.css" type="text/css">
     <div class="menu__container container">
         <!-- Logo -->
         <!-- Links -->

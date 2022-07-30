@@ -15,16 +15,38 @@
             <h1>Titulo</h1>
         </blockquote>
     </figure>
+    <!-- title end -->
+
     <!-- carousel -->
-   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+   <div id="carouselExampleFade" class="carousel slide carousel-fade container-carousel" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/bus-op.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item-text">
+                    <span>
+                        <h3>Third slide label</h3>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </span>
+                </div>
+                <img src="img/bus-op.jpg" alt="...">
             </div>
+
             <div class="carousel-item">
+                <div class="carousel-item-text">
+                    <span>
+                        <h3>Third slide label</h3>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </span>
+                </div>
                 <img src="img/buses.jpg" class="d-block w-100" alt="...">
             </div>
+            
             <div class="carousel-item">
+                <div class="carousel-item-text">
+                    <span>
+                        <h3>Third slide label</h3>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </span>
+                </div>
                 <img src="img/personas-bus.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
@@ -37,33 +59,48 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <!-- carousel end -->
 
     <!-- elements -->
-    <div class="card text-bg-light mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-            <img src="img/bus-op.jpg" class="img-fluid rounded-start" alt="">
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <div class="card text-bg-light mb-3">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-6">
+                        <img src="img/bus-op.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-md-6">
+                    <div class="card-body empresa-elements-container-text">
+                        <h5 class="card-title text-center">Ruta</h5>
+                        <p class="card-text">(=: Punto de inicio: Las Lomas</p>
+                        <li>Punto intermedio 1</li>
+                        <li>Punto intermedio 2</li>
+                        <p class="card-text">(=: Punto de Final: Santa Tereza</p>
+                        <p class="text-end"><span class="empresa-elements-costo">$$ Costo:</span> 2000 COP</p>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="card text-bg-light mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-            <div class="col-md-4">
-            <img src="img/bus-op.jpg" class="img-fluid rounded-start" alt="">
+            <div class="card text-bg-light mb-3">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-6">
+                        <img src="img/bus-op.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-md-6">
+                    <div class="card-body empresa-elements-container-text">
+                        <h5 class="card-title text-center">Ruta</h5>
+                        <p class="card-text">(=: Punto de inicio: Las Lomas</p>
+                        <li>Punto intermedio 1</li>
+                        <li>Punto intermedio 2</li>
+                        <p class="card-text">(=: Punto de Final: Santa Tereza</p>
+                        <p class="text-end"><span class="empresa-elements-costo">$$ Costo:</span> 2000 COP</p>
+                    </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            </div>
+
         </div>
     </div>
+    <!-- elements end -->
 </div>
