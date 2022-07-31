@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title ?? SITE_TITLE; ?></title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+
     <!-- TODO: Add styles.css -->
     <!-- TODO: Add main.js -->
     <!-- TODO: Add fonts (Roboto) -->
@@ -20,4 +21,6 @@
 <!-- body -->
 <body>
 
-<?php include_once('includes/sidebar.php');?>
+<?php if(!isset($menu_not_required) ): ?>
+    <?php include_once('includes/sidebar.php');?>
+<?php endif; ?>
