@@ -12,6 +12,15 @@
         header('location:logout.php');
     else:
         $res = mysqli_query($con,"SELECT * FROM users ORDER BY id DESC");
+
+        // If user wants to delete a user
+        if($_GET['del']){
+            $user_id = $_GET['id'];
+            $query = "DELETE from users where id =$user_id";
+            mysqli_query($con, $query);
+            echo "<script>alert('User Deleted')</script>";
+            echo "<script>window.location.href='usuarios.php'</script>";
+        }
 ?>
 
 <?php include_once('includes/header.php');?>
@@ -55,7 +64,7 @@
                                         <td><?php echo $row['creation_date'] ?? "2022-05-04";?></td>
                                         <td>
                                             <a href="editar-detalles-usuario.php?edit_id=<?php echo $row['id'];?>" class="btn btn-primary btn-xs">Edit</a>
-                                            <a href="manage-animals.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-xs">Delete</a>
+                                            <a href="usuarios.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-xs">Delete</a>
                                         </td>
                                     </tr>
                                 <?php endwhile; ?>

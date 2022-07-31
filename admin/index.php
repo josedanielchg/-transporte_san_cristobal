@@ -25,6 +25,8 @@
             $login_error = true;
         }
     }
+
+    $menu_not_required = true;
 ?>
 
 <?php include_once('includes/header.php');?>
