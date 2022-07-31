@@ -45,8 +45,8 @@
             <label for="TextareaComment" class="form-label">Comentario</label>
             <textarea class="form-control" id="TextareaComment" rows="4"></textarea>
         </div>
-        <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+        <div class="col-12 search-form__submit-bttn">
+            <button type="submit" class="btn">Enviar</button>
         </div>
     </form>
     <!-- form end -->

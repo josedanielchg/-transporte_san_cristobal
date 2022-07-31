@@ -7,6 +7,17 @@ h1,h2,h3,h4,h5{
     color: #1C0764;
 }
 
+.search-form__submit-bttn button{/* button .search-form__submit-bttn */
+    background: #1C0764;
+    color: #04E7BE;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*                                                  users                                             */
+
 /* Css from index.php */
 
 .background-index{
@@ -43,15 +54,6 @@ h1,h2,h3,h4,h5{
     margin-bottom: 9px;
 }
 
-    
-.search-form__form-container button{/* button .search-form__submit-bttn */
-    background: #1C0764;
-    color: #04E7BE;
-    padding-top: 8px;
-    padding-bottom: 12px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
 
 /* Css from index.php end */
 
@@ -121,5 +123,72 @@ h1,h2,h3,h4,h5{
     color: #1C0764;
 }
 
+.form-opinion input{
+    background-color: #CACACA;
+}
+
+.form-opinion textarea{
+    background-color: #CACACA;
+}
+
+.form-opinion select{
+    background-color: #CACACA;
+}
+
 
 /* Css from opiniones.php end */
+
+
+
+
+/*                                                  users end                                             */
+
+
+
+/*                                                  admin                                             */
+
+
+/* Css from opiniones.php end */
+
+.login-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#1d0764;
+    font-size: 12px;
+}
+
+.login__body-col{
+    background: #04E7BE;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.go-back a{
+    color: #1d0764;
+    text-decoration: none;
+}
+
+/* Css from opiniones.php end */
+
+
+/* Css from sidebar.php end */
+
+.sidebar__logo-container img{
+    width: 71px;
+    height: 71px;
+    display: inline;
+}
+
+.sidebar__logo-container h5{
+    display: inline;
+    margin: 5px;
+    color: white;
+}
+
+/* Css from sidebar.php end */
+
+/*                                                  admin end                                            */

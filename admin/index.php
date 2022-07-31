@@ -31,56 +31,45 @@
 
 <?php include_once('includes/header.php');?>
 
-<div class="container">
-
+<div class="login-container">
     <!-- Login -->
-    <div class="login">
-
+    <!-- Login Body -->
+    <div class="row justify-content-center login__body">
         <!-- Login Header -->
-        <div class="login_header">
-            <h2 class="login__title">
-                <?php echo SITE_TITLE; ?>
-            </h2>
-
-            <h4>Inicia Sesión para empezar a administrar la plataforma</h4>
-        </div>
-
-        <!-- Login Body -->
-        <div class="login__body">
-            <form action="#" method="POST" class="login__form" name="login">
-
+        <div class="col-10 login__body-col">
+            <div class="go-back">
+                <p>
+                    <a href="../index.php">[icon] Volver</a>
+                </p>
+            </div>
+            <div class="login_header text-center">
+                <h3 class="login__title">
+                    <?php echo SITE_TITLE; ?>
+                </h3>
+                <p>Inicia Sesión para empezar a administrar la plataforma</p>
+            </div>
+            <!-- form -->
+            <form class="row g-3 login__form" action="#" method="POST" name="login">
                 <!-- Usename input -->
-                <div class="login__input-container">
-                    <label for="username">
-                        <span class="login__icon">[icon] Username:</span>
-                        <input type="text" name="username" id="username" placeholder="Username">
-                    </label>
+                <div class="col-md-12">
+                    <label for="username" class="form-label">[icon] Username:</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Username">
                 </div>
-
                 <!-- Password input -->
-                <div class="login__input-container">
-                    <label for="password">
-                        <span class="login__icon">[icon] Password:</span>
-                        <input type="password" name="password" id="password" placeholder="Password">
-                    </label>
+                <div class="col-md-12">
+                    <label for="password" class="col-form-label">[icon] Password:</label>
+                    <input type="password" id="password" class="form-control" name="password" placeholder="Password">
                 </div>
-
-                <div class="login__input-container">
-                    <input type="submit" value="Buscar" class="input__submit-bttn" name="login">
+                <div class="col-12 search-form__submit-bttn text-center">
+                    <button type="submit" class="btn" name="login">acceso</button>
                 </div>
-
             </form>
+            <!-- form end -->
         </div>
-
     </div>
     <!-- End Login -->
-    
-    <div class="go-back">
-        <h3>
-            <a href="../index.php">Volver a la Página Principal</a>
-        </h3>
-    </div>
 </div>
+
 
 <!-- If user credentials are wrong then display error message -->
 <?php if( isset($login_error) ): ?>

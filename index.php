@@ -38,8 +38,8 @@
                                         <option value="">Selecciona una parada</option>
                                     </select>
                                 </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn search-form__submit-bttn">Buscar</button>
+                                <div class="text-center search-form__submit-bttn">
+                                    <button type="submit" class="btn">Buscar</button>
                                 </div>
                             </form>
                         </div>
