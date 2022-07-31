@@ -34,7 +34,7 @@
             <!-- CARD START -->
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Manage Animals</h4>
+                    <h4 class="header-title">Manejador de Usuarios</h4>
                     <a href="crear-usuario.php" class="btn btn-primary btn-m">Create</a>
                     
                     <div class="data-tables">

@@ -28,6 +28,13 @@
             </li>
 
             <li class="sidebar_links-items">
+                <a href="paradas.php">
+                    [icon]
+                    <span>Paradas</span>
+                </a>
+            </li>
+
+            <li class="sidebar_links-items">
                 <a href="comentarios.php">
                     [icon]
                     <span>Comentarios</span>
