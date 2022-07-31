@@ -89,7 +89,7 @@
                         <!-- Rol -->
                         <div class="form-group">
                             <label for="roles">Rol:</label>
-                            <select name="roles" id="roles">
+                            <select name="roles" id="roles" class="form-select" >
                                 <!-- Goes through all roles in db -->
                                 <?php foreach ($roles as $role): ?>
                                     <option value="<?php echo $role['id'] ?>" 
@@ -103,7 +103,7 @@
                         <!-- Contrasena -->
                         <div class="form-group">
                             <label for="password">Contraseña:</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter feed number" value="" required="true">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese la contraseña del usuario" value="" required="true">
                         </div>
                         
                         <input type="submit" value="Enviar" class="btn btn-primary mt-4 pr-4 pl-4" name="create_user">
