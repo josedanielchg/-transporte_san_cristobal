@@ -5,30 +5,27 @@
     include_once('../config/global.php');
     include_once('../config/dbconnection.php');
 
-    $title = "Usuarios - " . SITE_TITLE;
+    $title = "Compañias - " . SITE_TITLE;
 
     // Checks if there is a currently authenticated user, if not redirects to login
     if (strlen($_SESSION['tmsc_id'] == 0)):
         header('location:logout.php');
     else:
-        $res = mysqli_query($con,"SELECT * FROM users ORDER BY id DESC");
+        $res = mysqli_query($con,"SELECT * FROM companies ORDER BY id DESC");
 
         // If user wants to delete a user
         if($_GET['del']){
-            $user_id = $_GET['id'];
-            $query = "DELETE from users where id =$user_id";
+            $company_id = $_GET['id'];
+            $query = "DELETE from companies where id = $company_id";
             mysqli_query($con, $query);
-            echo "<script>alert('User Deleted')</script>";
-            echo "<script>window.location.href='usuarios.php'</script>";
+            echo "<script>alert('Compañia de Transporte Eliminada')</script>";
+            echo "<script>window.location.href='companias.php'</script>";
         }
 ?>
 
 <?php include_once('includes/header.php');?>
 
-<div>
-<div class="admin_background"></div>
 <div class="container">
-    
     <div class="row">
 
         <!-- DATA TABLE START -->
@@ -37,8 +34,8 @@
             <!-- CARD START -->
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Manejador de Usuarios</h4>
-                    <a href="crear-usuario.php" class="btn btn-primary btn-m">Create</a>
+                    <h4 class="header-title">Manejador de compañias de transporte</h4>
+                    <a href="crear-compania.php" class="btn btn-primary btn-m">Crear</a>
                     
                     <div class="data-tables">
                         <table class="table text-center">
@@ -47,10 +44,8 @@
                             <thead class="bg-light text-capitalize">
                                 <tr>
                                     <th>ID</th>
-                                    <th>Username</th>
-                                    <th>Email</th>
-                                    <th>Rol</th>
-                                    <th>Fecha de Creación</th>
+                                    <th>Nombre</th>
+                                    <th>Descripción</th>
                                     <th>Acción</th>
                                 </tr>
                             </thead>
@@ -61,13 +56,11 @@
                                 <?php while ( $row = mysqli_fetch_array($res) ): ?>
                                     <tr data-expanded="true">
                                         <td><?php echo $row['id'];?></td>
-                                        <td><?php echo $row['username'];?></td>
-                                        <td><?php echo $row['email'];?></td>
-                                        <td><?php echo $row['role_id'];?></td>
-                                        <td><?php echo $row['creation_date'] ?? "2022-05-04";?></td>
+                                        <td><?php echo $row['name']; ?></td>
+                                        <td><?php echo substr($row['description'], 0, 75);?>...</td>
                                         <td>
-                                            <a href="editar-detalles-usuario.php?edit_id=<?php echo $row['id'];?>" class="btn btn-primary btn-xs">Edit</a>
-                                            <a href="usuarios.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-xs">Delete</a>
+                                            <a href="editar-compania.php?edit_id=<?php echo $row['id'];?>" class="btn btn-primary btn-xs">Edit</a>
+                                            <a href="companias.php?id=<?php echo $row['id']?>&del=delete" onClick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-xs">Delete</a>
                                         </td>
                                     </tr>
                                 <?php endwhile; ?>
@@ -84,7 +77,6 @@
         <!-- DATA TABLE END -->
 
     </div>
-</div>
 </div>
 
 <?php endif; ?>
