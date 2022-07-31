@@ -15,5 +15,11 @@
 
 <?php include_once('includes/header.php');?>
 
+<div>
+<div class="admin_background"></div>
+<div class="container">
+    
+</div>
+</div>
 
 <?php endif; ?>
