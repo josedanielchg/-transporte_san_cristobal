@@ -205,10 +205,26 @@ h1,h2,h3,h4,h5{
 }
 
 
-
-
-
 /* Css from sidebar.php end */
+
+
+/* Css from crear-usuario.php */
+
+.form-create_user input{
+    margin: 5px;
+    margin-left: 0px;
+    margin-top: 8px;
+    background-color: #CACACA;
+}
+
+.form-create_user select{
+    margin: 5px;
+    margin-left: 0px;
+    margin-top: 8px;
+    background-color: #CACACA;
+}
+
+/* Css from crear-usuario.php end */
 
 
 
@@ -217,11 +233,18 @@ h1,h2,h3,h4,h5{
 
 
 .admin_background{ /* admin_background for alls */
-    position: absolute;
+    position: fixed;
     background: #DBDBDB;
     width: 100vw;
     height: 100vh;
     z-index: -1000;
+}
+
+.admin_form_container{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*                                                  admin end                                            */
