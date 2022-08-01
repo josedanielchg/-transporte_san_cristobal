@@ -15,7 +15,6 @@
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
-<<<<<<< HEAD
       </div>
       <!-- Links -->
       <!-- TODO: Add icon to each link item -->
@@ -30,38 +29,6 @@
           <li class="nav-item sidebar_links-items">
             <a class="nav-link" href="comentarios.php">[icon] Comentarios</a>
           </li>
-=======
-        <!-- Links -->
-        <ul class="sidebar__links">
-            <!-- TODO: Add icon to each link item -->
-            <li class="sidebar_links-items">
-                <a href="usuarios.php">
-                    [icon]
-                    <span>Usuarios</span>
-                </a>
-            </li>
-
-            <li class="sidebar_links-items">
-                <a href="rutas.php">
-                    [icon]
-                    <span>Rutas</span>
-                </a>
-            </li>
-
-            <li class="sidebar_links-items">
-                <a href="paradas.php">
-                    [icon]
-                    <span>Paradas</span>
-                </a>
-            </li>
-
-            <li class="sidebar_links-items">
-                <a href="comentarios.php">
-                    [icon]
-                    <span>Comentarios</span>
-                </a>
-            </li>
->>>>>>> main
         </ul>
       </div>
     </div>
