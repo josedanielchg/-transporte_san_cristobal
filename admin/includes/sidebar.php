@@ -27,6 +27,10 @@
           </li>
           <li class="nav-item sidebar_links-items">
             <a class="nav-link" href="companias.php"><?php include('../icon/building.svg');?> Compañias</a>
+            <a class="nav-link" href="paradas.php">[icon] Paradas</a>
+          </li>
+          <li class="nav-item sidebar_links-items">
+            <a class="nav-link" href="companias.php">[icon] Compañias</a>
           </li>
           <li class="nav-item sidebar_links-items">
             <a class="nav-link" href="comentarios.php"><?php include('../icon/chat-dots.svg');?> Comentarios</a>
