@@ -25,6 +25,9 @@
                         <li class="nav-item menu_links-items">
                             <a class="nav-link" href="opiniones.php">Dejanos tú opinión</a>
                         </li>
+                        <li class="nav-item menu_links-items">
+                            <a class="nav-link" href="admin">administracion</a>
+                        </li>
                     </ul>
                 </div>
             </div>

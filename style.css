@@ -148,7 +148,7 @@ h1,h2,h3,h4,h5{
 /*                                                  admin                                             */
 
 
-/* Css from opiniones.php end */
+/* Css from index.php end */
 
 .login-container {
     position: fixed;
@@ -157,22 +157,30 @@ h1,h2,h3,h4,h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    background:#1d0764;
+    background:#CACACA;
     font-size: 12px;
+    color: #ffffff;
+}
+
+.login__title{
+    color: #04E7BE;
 }
 
 .login__body-col{
-    background: #04E7BE;
+    background: #1d0764;
     padding: 40px;
     border-radius: 15px;
 }
 
 .go-back a{
-    color: #1d0764;
+    color: #04e7bdc7;
     text-decoration: none;
 }
+.go-back a:hover{
+    color: #a8a1a1;
+}
 
-/* Css from opiniones.php end */
+/* Css from index.php end */
 
 
 /* Css from sidebar.php end */
@@ -196,6 +204,18 @@ h1,h2,h3,h4,h5{
     color: white;
 }
 
+
+
+
+
+/* Css from sidebar.php end */
+
+
+
+
+
+
+
 .admin_background{ /* admin_background for alls */
     position: absolute;
     background: #DBDBDB;
@@ -203,11 +223,5 @@ h1,h2,h3,h4,h5{
     height: 100vh;
     z-index: -1000;
 }
-
-
-
-/* Css from sidebar.php end */
-
-
 
 /*                                                  admin end                                            */
