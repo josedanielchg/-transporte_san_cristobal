@@ -26,6 +26,9 @@
             <a class="nav-link" href="rutas.php">[icon] Rutas</a>
           </li>
           <li class="nav-item sidebar_links-items">
+            <a class="nav-link" href="paradas.php">[icon] Paradas</a>
+          </li>
+          <li class="nav-item sidebar_links-items">
             <a class="nav-link" href="companias.php">[icon] Compañias</a>
           </li>
           <li class="nav-item sidebar_links-items">
