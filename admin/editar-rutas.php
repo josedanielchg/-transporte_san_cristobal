@@ -1,6 +1,6 @@
 <?php
     session_start();
-    // error_reporting(0);
+    error_reporting(0);
 
     include_once('../config/global.php');
     include_once('../config/dbconnection.php');

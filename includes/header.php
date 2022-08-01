@@ -11,11 +11,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <title><?php echo $title ?? SITE_TITLE; ?></title>
 
-    <!-- TODO: Add styles.css -->
-
-    <!-- TODO: Add main.js -->
     <!-- TODO: Add fonts (Roboto) -->
-    <!-- TODO: Add icons source -->
     <!-- TODO: Add favicon -->
 </head>
 <!-- End head -->

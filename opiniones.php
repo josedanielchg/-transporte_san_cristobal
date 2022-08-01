@@ -7,7 +7,6 @@
 <?php include_once('includes/header.php');?>
 
 <div class="container">
-    <!-- TODO: Add all HTML to this Page -->
     <!-- title -->
     <figure class="text-center">
         <blockquote class="blockquote">
