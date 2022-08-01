@@ -9,7 +9,7 @@
                 <div class="col">
                     <div class="container">
                         <a class="navbar-brand" href="index.php">
-                            <img src="img/logo.png" alt="" class="menu__logo">
+                            <img src="assets/images/logo.png" alt="" class="menu__logo">
                             Transporte San Cristóbal
                         </a>
                     </div>
