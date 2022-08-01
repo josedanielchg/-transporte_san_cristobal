@@ -20,7 +20,7 @@
                             <a class="nav-link active" href="index.php">Busca tú Ruta</a>
                         </li>
                         <li class="nav-item menu_links-items">
-                            <a class="nav-link" href="empresa.php">Compañias</a>
+                            <a class="nav-link" href="empresas.php">Compañias</a>
                         </li>
                         <li class="nav-item menu_links-items">
                             <a class="nav-link" href="opiniones.php">Dejanos tú opinión</a>

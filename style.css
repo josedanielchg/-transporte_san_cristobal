@@ -121,6 +121,32 @@ h1,h2,h3,h4,h5{
 /* Css from empresa.php end */
 
 
+/* Css from empresas.php  */
+
+.btn_ver_empresa a{
+    background-color: #1C0764;
+    color: #04E7BE;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.container_table_empresas{
+    padding: 5px;
+    margin-top: 50px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.container_table_empresas thead{
+    color: #1C0764;
+}
+
+
+/* Css from empresas.php end */
+
+
 /* Css from opiniones.php */
 
 .form-opinion{
