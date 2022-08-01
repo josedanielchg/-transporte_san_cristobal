@@ -10,7 +10,7 @@
 <div >
 <div class="admin_background"></div>
 <div>&nbsp;</div>
-<div class="container_table_empresas"style=" margin: 40px;">
+<div class="container_table_empresas">
     <table class="table">
         <thead>
             <tr>
