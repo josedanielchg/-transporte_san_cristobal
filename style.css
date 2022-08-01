@@ -64,6 +64,10 @@ h1,h2,h3,h4,h5{
     height: 71px;
 }
 
+.menu__container a{
+    color: #1C0764;
+}
+
 /* Css from menu.php end */
 
 
@@ -228,6 +232,36 @@ h1,h2,h3,h4,h5{
 
 
 
+/* Css from comentarios.php end */
+
+.coment_User_item{
+    margin: 12px;
+}
+
+.coment_User_item strong{
+    color: #1d0764;
+}
+
+.coment_User_Delete{
+    margin: 10px;
+    margin-bottom: 0px;
+    color: #04e7bdc7;
+    text-decoration: none;
+    text-align: end;
+}
+
+.coment_User_Delete:hover{
+    color: #a8a1a1;
+}
+
+.coment_User_Delete p{
+    padding-top: 10px;
+    margin-left: 1px;
+    display: inline;
+}
+
+/* Css from comentarios.php end */
+
 
 
 
@@ -247,4 +281,4 @@ h1,h2,h3,h4,h5{
     align-items: center;
 }
 
-/*                                                  admin end                                            */
+/*                                                  admin end                        */

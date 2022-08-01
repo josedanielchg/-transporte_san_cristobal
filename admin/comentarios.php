@@ -25,8 +25,10 @@
 
 <?php include_once('includes/header.php');?>
 
-<div class="container">
-    <div class="row">
+<div>
+<div class="admin_background"></div>
+<div class="container admin_form_container">
+    <div class="row"  style="width: 90vw;">
 
         <!-- DATA TABLE START -->
         <div class="col-12 mt-5">
@@ -34,59 +36,66 @@
             <!-- CARD START -->
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Manejador de comentarios</h4>
-                    
-                    <div class="opinions-cards">
-                        <?php while ( $row = mysqli_fetch_array($res) ): ?>
+                    <!-- title -->
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Manejador de comentarios</h4>
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
+                                       
+                    <div class="coment_User-cards">
+                        
+                        <?php while ( $row = mysqli_fetch_array($res) ): ?> 
 
                             <!-- Comentario -->
-                            <div class="card opinion-container">
+                            <div class="card coment_User-container">
                                 <a href="comentarios.php?id=<?php echo $row['id']?>&del=delete" 
-                                    onClick="return confirm('Are you sure you want to delete?')" >[icon] Delete</a>
+                                    onClick="return confirm('Are you sure you want to delete?')" class="coment_User_Delete"
+                                >
+                                    <?php include('../icon/backspace.svg');?><p> Delete</p>
+                                </a>
 
-                                <div class="opinion-body">
-                                    <ul>
+                                <div class="coment_User-body">
                                         <!-- Nombre -->
-                                        <li class="name">
-                                            <strong>[icon] <?php echo $row['name'] . ' ' . $row['lastname'];?></strong>
-                                        </li>
+                                        <p class="name coment_User_item">
+                                            <strong> <?php include('../icon/person-circle.svg');?><?php echo $row['name'] . ' ' . $row['lastname'];?></strong>
+                                        </p>
                                         
                                         <!-- Fecha -->
-                                        <li class="created_at">
-                                            <strong>[icon] Fecha: </strong>
+                                        <p class="created_at coment_User_item">
+                                            <strong> <?php include('../icon/calendar-event.svg');?> Fecha: </strong>
                                             <?php 
                                                 $date = strtotime($row['created_at']);
                                                 echo date('d-m-Y', $date);
                                             ?>
-                                        </li>
+                                        </p>
         
                                         <!-- Email -->
-                                        <li class="email">
-                                            <strong>[icon] Email: </strong><?php echo $row['email']?>
-                                        </li>
+                                        <p class="email coment_User_item">
+                                            <strong> <?php include('../icon/envelope.svg');?> Email: </strong><?php echo $row['email']?>
+                                        </p>
         
                                         <!-- Phone -->
-                                        <li class="phone">
-                                            <strong>[icon] Telefono: </strong><?php echo $row['phone']?>
-                                        </li>
+                                        <p class="phone coment_User_item">
+                                            <strong><?php include('../icon/telephone.svg');?> Telefono: </strong><?php echo $row['phone']?>
+                                        </p>
         
                                         <!-- Company -->
-                                        <li class="company">
-                                            <strong>[icon] Empresa de Referencia: </strong> <?php echo $row['company_id']?>
-                                        </li>
+                                        <p class="company coment_User_item">
+                                            <strong><?php include('../icon/building.svg');?> Empresa de Referencia: </strong> <?php echo $row['company_id']?>
+                                        </p>
         
                                         <!-- Comentario -->
-                                        <li class="opinions">
-                                            <strong>[icon] Comentario:</strong>
-                                        </li>
+                                        <p class="opinions coment_User_item">
+                                            <strong><?php include('../icon/pencil-square.svg');?> Comentario:</strong>
+                                        </p>
         
-                                        <li class="opinions-content"><?php echo $row['description']?></li>
-                                    </ul>
+                                        <p class="opinions-content coment_User_item" style=" margin-left: 45px;"><?php echo $row['description']?></li>
                                 </div>
                             </div>
 
                         <?php endwhile; ?>
-
                     </div>
                 </div>
             </div>
@@ -96,6 +105,7 @@
         <!-- DATA TABLE END -->
 
     </div>
+</div>
 </div>
 
 <?php endif; ?>

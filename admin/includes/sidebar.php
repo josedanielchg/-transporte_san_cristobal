@@ -20,16 +20,16 @@
       <div class="offcanvas-body sidebar__links">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item sidebar_links-items">
-            <a class="nav-link" aria-current="page" href="usuarios.php">[icon] Usuarios</a>
+            <a class="nav-link" aria-current="page" href="usuarios.php"><?php include('../icon/person-circle.svg');?> Usuarios</a>
           </li>
           <li class="nav-item sidebar_links-items">
-            <a class="nav-link" href="rutas.php">[icon] Rutas</a>
+            <a class="nav-link" href="rutas.php"><?php include('../icon/car-front.svg');?> Rutas</a>
           </li>
           <li class="nav-item sidebar_links-items">
-            <a class="nav-link" href="companias.php">[icon] Compañias</a>
+            <a class="nav-link" href="companias.php"><?php include('../icon/building.svg');?> Compañias</a>
           </li>
           <li class="nav-item sidebar_links-items">
-            <a class="nav-link" href="comentarios.php">[icon] Comentarios</a>
+            <a class="nav-link" href="comentarios.php"><?php include('../icon/chat-dots.svg');?> Comentarios</a>
           </li>
         </ul>
       </div>

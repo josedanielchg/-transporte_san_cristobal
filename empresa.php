@@ -71,12 +71,12 @@
                     </div>
                     <div class="col-md-6">
                     <div class="card-body empresa-elements-container-text">
-                        <h5 class="card-title text-center">Ruta</h5>
-                        <p class="card-text">[icon] Punto de inicio: Las Lomas</p>
+                        <h5 class="card-title text-center"><?php include('icon/car-front.svg');?>Ruta</h5>
+                        <p class="card-text"><?php include('icon/geo-alt.svg');?> Punto de inicio: Las Lomas</p>
                         <li>Punto intermedio 1</li>
                         <li>Punto intermedio 2</li>
-                        <p class="card-text">[icon] Punto de Final: Santa Tereza</p>
-                        <p class="text-end"><span class="empresa-elements-costo">[icon] Costo:</span> 2000 COP</p>
+                        <p class="card-text"><?php include('icon/geo-alt.svg');?> Punto de Final: Santa Tereza</p>
+                        <p class="text-end"><span class="empresa-elements-costo"><?php include('icon/cash-coin.svg');?> Costo:</span> 2000 COP</p>
                     </div>
                     </div>
                 </div>
@@ -89,12 +89,12 @@
                     </div>
                     <div class="col-md-6">
                     <div class="card-body empresa-elements-container-text">
-                        <h5 class="card-title text-center">Ruta</h5>
-                        <p class="card-text">(=: Punto de inicio: Las Lomas</p>
+                        <h5 class="card-title text-center"><?php include('icon/car-front.svg');?>Ruta</h5>
+                        <p class="card-text"><?php include('icon/geo-alt.svg');?> Punto de inicio: Las Lomas</p>
                         <li>Punto intermedio 1</li>
                         <li>Punto intermedio 2</li>
-                        <p class="card-text">(=: Punto de Final: Santa Tereza</p>
-                        <p class="text-end"><span class="empresa-elements-costo">$$ Costo:</span> 2000 COP</p>
+                        <p class="card-text"><?php include('icon/geo-alt.svg');?> Punto de Final: Santa Tereza</p>
+                        <p class="text-end"><span class="empresa-elements-costo"><?php include('icon/cash-coin.svg');?> Costo:</span> 2000 COP</p>
                     </div>
                     </div>
                 </div>

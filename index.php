@@ -23,17 +23,17 @@
                             <form>
                                 <!-- From input -->
                                 <div class="mb-3 search-form__icon">
-                                    <label class="form-label">[icon] Desde:</label>
+                                    <label class="form-label"><?php include('icon/geo-alt.svg');?> Desde:</label>
                                     <input type="text" class="form-control" placeholder="Desde:">
                                 </div>
                                 <!-- To input -->
                                 <div class="mb-3 search-form__icon">
-                                    <label class="form-label">[icon] Hasta:</label>
+                                    <label class="form-label"><?php include('icon/geo-alt.svg');?> Hasta:</label>
                                     <input type="text" class="form-control" placeholder="Hasta:">
                                 </div>
                                 <!-- Parada Select -->
                                 <div class="mb-3 search-form__icon">
-                                    <label class="form-label">[icon] Seleccionar punto intermedio:</label>
+                                    <label class="form-label"><?php include('icon/geo-alt.svg');?> Seleccionar punto intermedio:</label>
                                     <select class="form-select search-form__select-stop">
                                         <option value="">Selecciona una parada</option>
                                     </select>
@@ -58,24 +58,24 @@
                     <!-- TODO: agregar todas los resultados con un foreach en php -->
                     <div class="card">
                         <div class="results__item">
-                            <h5>[icon] Ruta</h5>
-                            <p class="results__item-puntosDe">[icon] Punto de inicio: Las Lomas</p>
+                            <h5><?php include('icon/car-front.svg');?> Ruta</h5>
+                            <p class="results__item-puntosDe"><?php include('icon/geo-alt.svg');?> Punto de inicio: Las Lomas</p>
                             <li>Punto intermedio 1</li>
                             <li>Punto intermedio 2</li>
                             <!-- TODO: agregar todas los puntos intermedios con un foreach en php -->
-                            <p class="results__item-puntosDe">[icon] Punto de Final: Santa Tereza</p>
-                            <p class="text-end"><span class="empresa-elements-costo">[icon] Costo:</span> 2000 COP</p>
+                            <p class="results__item-puntosDe"><?php include('icon/geo-alt.svg');?> Punto de Final: Santa Tereza</p>
+                            <p class="text-end"><span class="empresa-elements-costo"><?php include('icon/cash-coin.svg');?> Costo:</span> 2000 COP</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="results__item">
-                            <h5>[icon] Ruta</h5>
-                            <p class="results__item-puntosDe">[icon] Punto de inicio: Las Lomas</p>
+                            <h5><?php include('icon/car-front.svg');?> Ruta</h5>
+                            <p class="results__item-puntosDe"><?php include('icon/geo-alt.svg');?> Punto de inicio: Las Lomas</p>
                             <li>Punto intermedio 1</li>
                             <li>Punto intermedio 2</li>
                             <!-- TODO: agregar todas los puntos intermedios con un foreach en php -->
-                            <p class="results__item-puntosDe">[icon] Punto de Final: Santa Tereza</p>
-                            <p class="text-end"><span class="empresa-elements-costo">[icon] Costo:</span> 2000 COP</p>
+                            <p class="results__item-puntosDe"><?php include('icon/geo-alt.svg');?> Punto de Final: Santa Tereza</p>
+                            <p class="text-end"><span class="empresa-elements-costo"><?php include('icon/cash-coin.svg');?> Costo:</span> 2000 COP</p>
                         </div>
                     </div>
                     <!-- End Results items-->

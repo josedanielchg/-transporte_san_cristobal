@@ -15,10 +15,10 @@
 
 <?php include_once('includes/header.php');?>
 
-div>
+<div>
 <div class="admin_background"></div>
 <div class="container admin_form_container">
-    <div class="row" >
+    <div class="row">
         <!-- BASIC FORM START -->
         <div class="col-12 mt-5">
             <div class="card">
