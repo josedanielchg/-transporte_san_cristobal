@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 25-07-2022 a las 08:49:53
+-- Tiempo de generación: 31-07-2022 a las 23:01:34
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -30,7 +30,25 @@ SET time_zone = "+00:00";
 CREATE TABLE `companies` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
-  `description` text NOT NULL
+  `description` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `opinions`
+--
+
+CREATE TABLE `opinions` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phone` varchar(255) NOT NULL,
+  `company_id` int(10) UNSIGNED NOT NULL,
+  `description` text NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -42,17 +60,18 @@ CREATE TABLE `companies` (
 CREATE TABLE `roles` (
   `id` int(10) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
-  `slug` varchar(255) NOT NULL
+  `slug` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `roles`
 --
 
-INSERT INTO `roles` (`id`, `name`, `slug`) VALUES
-(1, 'Usuario Administrador', 'admin'),
-(2, 'Usuario Alcaldía', 'alcaldia-user'),
-(5, 'Usuario Autorizado', 'authorized-user');
+INSERT INTO `roles` (`id`, `name`, `slug`, `created_at`) VALUES
+(1, 'Usuario Administrador', 'admin', '2022-07-31 20:51:41'),
+(2, 'Usuario Alcaldía', 'alcaldia-user', '2022-07-31 20:51:41'),
+(3, 'Usuario Autorizado', 'authorized-user', '2022-07-31 20:51:41');
 
 -- --------------------------------------------------------
 
@@ -63,7 +82,8 @@ INSERT INTO `roles` (`id`, `name`, `slug`) VALUES
 CREATE TABLE `rutes` (
   `id` int(10) UNSIGNED NOT NULL,
   `company_id` int(10) UNSIGNED NOT NULL,
-  `cost` decimal(10,0) UNSIGNED NOT NULL
+  `cost` decimal(10,0) UNSIGNED NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -86,7 +106,8 @@ CREATE TABLE `rutes_stops` (
 
 CREATE TABLE `stops` (
   `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL
+  `name` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -97,18 +118,21 @@ CREATE TABLE `stops` (
 
 CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `role_id` int(10) UNSIGNED DEFAULT NULL
+  `role_id` int(10) UNSIGNED DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`, `role_id`) VALUES
-(1, 'admin', 'admin@admin.com', '0192023a7bbd73250516f069df18b500', NULL);
+INSERT INTO `users` (`id`, `name`, `lastname`, `username`, `email`, `password`, `role_id`, `created_at`) VALUES
+(1, 'User', 'Admin', 'admin', 'admin@admin.com', '0192023a7bbd73250516f069df18b500', 1, '2022-07-31 20:49:52');
 
 --
 -- Índices para tablas volcadas
@@ -119,6 +143,13 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`, `role_id`) VALUES
 --
 ALTER TABLE `companies`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `opinions`
+--
+ALTER TABLE `opinions`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `company_id` (`company_id`);
 
 --
 -- Indices de la tabla `roles`
@@ -169,6 +200,12 @@ ALTER TABLE `companies`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT de la tabla `opinions`
+--
+ALTER TABLE `opinions`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT de la tabla `roles`
 --
 ALTER TABLE `roles`
@@ -195,6 +232,12 @@ ALTER TABLE `users`
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `opinions`
+--
+ALTER TABLE `opinions`
+  ADD CONSTRAINT `opinions_ibfk_1` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Filtros para la tabla `rutes`
