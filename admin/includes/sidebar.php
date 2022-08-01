@@ -26,7 +26,7 @@
             <a class="nav-link" href="rutas.php"><?php include('../icon/car-front.svg');?> Rutas</a>
           </li>
           <li class="nav-item sidebar_links-items">
-            <a class="nav-link" href="paradas.php"><?php include('../icon/sign-stop.svg');?>  Paradas</a>
+            <a class="nav-link" href="paradas.php"><?php include('../icon/sign-stop.svg');?> Paradas</a>
           </li>
           <li class="nav-item sidebar_links-items">
             <a class="nav-link" href="companias.php"><?php include('../icon/building.svg');?> Compañias</a>

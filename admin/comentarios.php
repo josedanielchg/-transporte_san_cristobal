@@ -53,13 +53,13 @@
                                 <a href="comentarios.php?id=<?php echo $row['id']?>&del=delete" 
                                     onClick="return confirm('Are you sure you want to delete?')" class="coment_User_Delete"
                                 >
-                                    <?php include('../icon/backspace.svg');?><p> Delete</p>
+                                    <?php include('../icon/backspace.svg');?>
                                 </a>
 
                                 <div class="coment_User-body">
                                         <!-- Nombre -->
                                         <p class="name coment_User_item">
-                                            <strong> <?php include('../icon/person-circle.svg');?><?php echo $row['name'] . ' ' . $row['lastname'];?></strong>
+                                            <strong> <?php include('../icon/person-circle.svg');?> <?php echo $row['name'] . ' ' . $row['lastname'];?></strong>
                                         </p>
                                         
                                         <!-- Fecha -->

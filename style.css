@@ -273,13 +273,16 @@ h1,h2,h3,h4,h5{
 .coment_User_Delete{
     margin: 10px;
     margin-bottom: 0px;
-    color: #04e7bdc7;
+    color: #1d0764;
     text-decoration: none;
     text-align: end;
+    position: absolute;
+    top: 0;
+    right: 8px;
 }
 
 .coment_User_Delete:hover{
-    color: #a8a1a1;
+    color: #1d0764;
 }
 
 .coment_User_Delete p{
