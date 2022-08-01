@@ -2,6 +2,7 @@
 <!-- Sidebar -->
 <nav class="navbar navbar-dark bg-dark fixed-top sidebar">
   <div class="container-fluid sidebar__container container">
+    <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,50 +15,22 @@
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
 
+<<<<<<< HEAD
       </div>
-      <div class="offcanvas-body">
+      <!-- Links -->
+      <!-- TODO: Add icon to each link item -->
+      <div class="offcanvas-body sidebar__links">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <li class="nav-item sidebar_links-items">
+            <a class="nav-link" aria-current="page" href="usuarios.php">[icon] Usuarios</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+          <li class="nav-item sidebar_links-items">
+            <a class="nav-link" href="rutas.php">[icon] Rutas</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+          <li class="nav-item sidebar_links-items">
+            <a class="nav-link" href="comentarios.php">[icon] Comentarios</a>
           </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- Sidebar -->
-<nav class="sidebar">
-    <div class="sidebar__container container">
-
-        <!-- Logo -->
-        <div class="sidebar__logo-container">
-            <!-- TODO: Add Alcaldia Logo -->
-            <img src="" alt="" class="sidebar__logo">
-            [Logo]
-            <strong>Transporte San Cristóbal</strong>
-        </div>
-
+=======
         <!-- Links -->
         <ul class="sidebar__links">
             <!-- TODO: Add icon to each link item -->
@@ -88,9 +61,10 @@
                     <span>Comentarios</span>
                 </a>
             </li>
+>>>>>>> main
         </ul>
+      </div>
     </div>
-
-    <div class="sidebar_background"></div>
+  </div>
 </nav>
 <!-- End sidebar -->

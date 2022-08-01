@@ -26,6 +26,8 @@
 
 <?php include_once('includes/header.php');?>
 
+<div>
+<div class="admin_background"></div>
 <div class="container">
     <div class="row">
         <!-- BASIC FORM START -->
@@ -125,6 +127,7 @@
         <!-- basic form end -->
         
     </div>
+</div>
 </div>
 
 <?php endif; ?>
