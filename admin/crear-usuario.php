@@ -29,17 +29,26 @@
 
 <?php include_once('includes/header.php');?>
 
-<div class="container">
-    <div class="row">
+<div>
+<div class="admin_background"></div>
+<div class="container admin_form_container">
+    <div class="row" >
         <!-- BASIC FORM START -->
         <div class="col-12 mt-5">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Crear un Usuario</h4>
-                    <form action="#" method="POST" name="create_user">
+                    <!-- title -->
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Crear un Usuario</h4>
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
+                    
+                    <form action="#" method="POST" name="create_user" class="row g-3 form-create_user">
 
                         <!-- Nombre -->
-                        <div class="form-group">
+                        <div class="form-group col-md-6">
                             <label for="name">Nombre:</label>
                             <input type="text"
                                 class="form-control" 
@@ -51,7 +60,7 @@
                         </div>
 
                         <!-- Apellido -->
-                        <div class="form-group">
+                        <div class="form-group col-md-6">
                             <label for="lastname">Apellidos:</label>
                             <input type="text" 
                                 class="form-control" 
@@ -106,7 +115,9 @@
                             <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese la contraseña del usuario" value="" required="true">
                         </div>
                         
-                        <input type="submit" value="Enviar" class="btn btn-primary mt-4 pr-4 pl-4" name="create_user">
+                        <div class="search-form__submit-bttn">
+                            <button type="submit" value="Enviar" class="btn mt-4 pr-4 pl-4" name="create_user">Buscar</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -114,6 +125,7 @@
         <!-- basic form end -->
         
     </div>
+</div>
 </div>
 
 <?php endif; ?>
