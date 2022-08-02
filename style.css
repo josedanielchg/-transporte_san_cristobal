@@ -7,7 +7,7 @@ h1,h2,h3,h4,h5{
     color: #1C0764;
 }
 
-.search-form__submit-bttn button{/* button .search-form__submit-bttn */
+.search-form__submit-bttn input[type="submit"]{/* button .search-form__submit-bttn */
     background: #1C0764;
     color: #04E7BE;
     padding-top: 8px;
@@ -19,6 +19,10 @@ h1,h2,h3,h4,h5{
 /*                                                  users                                             */
 
 /* Css from index.php */
+
+#home {
+    margin-top: -24px;
+}
 
 .background-index{
     position: fixed;
