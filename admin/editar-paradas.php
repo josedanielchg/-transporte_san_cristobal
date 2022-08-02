@@ -58,9 +58,6 @@
 
 <?php endif; ?>
 
-<!-- TODO: Añadir footer aquí -->
-
-
 
 <!-- ================================ -->
 <!-- === Functions from this page === -->

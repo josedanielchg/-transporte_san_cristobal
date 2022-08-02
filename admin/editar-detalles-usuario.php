@@ -141,9 +141,6 @@
 
 <?php endif; ?>
 
-<!-- TODO: Añadir footer aquí -->
-
-
 
 <!-- ================================ -->
 <!-- === Functions from this page === -->
@@ -191,7 +188,7 @@
         }
 
         // Prepare query to update user
-        $query= "UPDATE users set username='$username',email='$email', password='$new_password' where id=$user_id";
+        $query= "UPDATE users set name='$name', lastname='$lastname', username='$username', email='$email', password='$new_password', role_id='$role_id' where id=$user_id";
         $query = mysqli_query($connection, $query);
 
         if ($query){
