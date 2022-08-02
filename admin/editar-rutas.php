@@ -210,7 +210,7 @@
             }
 
         //Update rute end point
-        $sequence = count($rute_id['stops']) + 1;
+        $sequence = count($rute_id['stops']) + 2;
         $query= "INSERT INTO rutes_stops (rutes_id, stops_id, sequence) value('{$rute_id['rute_id']}','{$rute_id['end_point']}', '{$sequence}')";
         $query = mysqli_query($connection, $query);
 
