@@ -36,28 +36,28 @@
     <!-- Login Body -->
     <div class="row justify-content-center login__body">
         <!-- Login Header -->
-        <div class="col-10 login__body-col">
+        <div class="col-12 login__body-col">
             <div class="go-back">
                 <p>
-                    <a href="../index.php"><?php include('../icon/arrow-left.svg');?> Volver</a>
+                    <a href="../index.php"  style="font-size: 10px;" ><?php include('../assets/icons/arrow-left.svg');?> Volver</a>
                 </p>
             </div>
-            <div class="login_header text-center">
-                <h3 class="login__title">
+            <div class="login_header text-center"  style="margin: 40px;">
+                <h1 class="login__title">
                     <?php echo SITE_TITLE; ?>
-                </h3>
+                </h1>
                 <p>Inicia Sesión para empezar a administrar la plataforma</p>
             </div>
             <!-- form -->
             <form class="row g-3 login__form" action="#" method="POST" name="login">
                 <!-- Usename input -->
                 <div class="col-md-12">
-                    <label for="username" class="form-label"><?php include('../icon/person-circle.svg');?> Username:</label>
+                    <label for="username" class="form-label"><?php include('../assets/icons/person-circle.svg');?> Username:</label>
                     <input type="text" class="form-control" id="username" name="username" placeholder="Username">
                 </div>
                 <!-- Password input -->
                 <div class="col-md-12">
-                    <label for="password" class="col-form-label"><?php include('../icon/key.svg');?> Password:</label>
+                    <label for="password" class="col-form-label"><?php include('../assets/icons/key.svg');?> Password:</label>
                     <input type="password" id="password" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="col-12  text-center">
