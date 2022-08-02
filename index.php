@@ -148,16 +148,10 @@
             $query = mysqli_query($connection, $query);
             $stops_number = mysqli_fetch_assoc($query);
 
-            // echo '<pre>';
-            // var_dump($stop_type);
-            // var_dump($rute);
-            // var_dump($stops_number['total']);
-            // echo '</pre>';
-
             if(
                 ($stop_type == 1 && $rute[1] == 1) || //Punto inicial
                 ($stop_type == 3 && $rute[1] == $stops_number['total']) || //Punto final
-                ($stop_type == 2 && $rute[1] < $stops_number['total']) //Punto intermedio
+                ($stop_type == 2 && $rute[1] < $stops_number['total'] && $rute[1] > 1 ) //Punto intermedio
             ) {
                 //Get all stops from a rute
                 $query = "SELECT s.id, rs.sequence AS sequence,s.name, s.created_at FROM rutes_stops AS rs JOIN stops AS s ON s.id = rs.stops_id WHERE rutes_id = '{$rute[0]}' ORDER BY rs.sequence";
