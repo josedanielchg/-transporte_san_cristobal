@@ -39,7 +39,7 @@
         <div class="col-10 login__body-col">
             <div class="go-back">
                 <p>
-                    <a href="../index.php">[icon] Volver</a>
+                    <a href="../index.php"><?php include('../icon/arrow-left.svg');?> Volver</a>
                 </p>
             </div>
             <div class="login_header text-center">
@@ -52,16 +52,16 @@
             <form class="row g-3 login__form" action="#" method="POST" name="login">
                 <!-- Usename input -->
                 <div class="col-md-12">
-                    <label for="username" class="form-label">[icon] Username:</label>
+                    <label for="username" class="form-label"><?php include('../icon/person-circle.svg');?> Username:</label>
                     <input type="text" class="form-control" id="username" name="username" placeholder="Username">
                 </div>
                 <!-- Password input -->
                 <div class="col-md-12">
-                    <label for="password" class="col-form-label">[icon] Password:</label>
+                    <label for="password" class="col-form-label"><?php include('../icon/key.svg');?> Password:</label>
                     <input type="password" id="password" class="form-control" name="password" placeholder="Password">
                 </div>
-                <div class="col-12 search-form__submit-bttn text-center">
-                    <button type="submit" class="btn" name="login">acceso</button>
+                <div class="col-12  text-center">
+                    <button type="submit" class="btn btn-outline-light" name="login">acceso</button>
                 </div>
             </form>
             <!-- form end -->

@@ -30,7 +30,9 @@
 
 <?php include_once('includes/header.php');?>
 
-<div class="container">
+<div>
+<div class="admin_background"></div>
+<div class="container"  style="margin-top: 15px;">
     <div class="row">
 
         <!-- DATA TABLE START -->
@@ -39,13 +41,23 @@
             <!-- CARD START -->
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Manejador de Paradas</h4>
+                     <!-- title -->
+                     <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Manejador de Paradas</h4>
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
 
-                    <div class="form-group" class="mb-4">
+                    <div class="search-form__submit-bttn text-end">
+                        <button type="submit" value="Crear" class="btn mt-4 pr-4 pl-4" name="create_stop">Crear</button>
+                    </div>
+
+
+                    <div class="form-group" class="mb-4" style="margin-top: 5px; margin-bottom: 30px;">
                         <form action="#" method="POST" name="create_stop">
-                            <label for="stops">Crear nueva ruta:</label>
-                            <input type="text" class="form-control" id="stops" name="stop" placeholder="Ingrese nombre de la parada" required="true">
-                            <input type="submit" value="Crear" class="btn btn-primary btn-m pr-4 pl-4" name="create_stop">
+                            <label for="stops" style="margin-top: 5px; margin-bottom: 5px;">Crear nueva ruta:</label>
+                            <input type="text" class="form-control" id="stops" name="stop" placeholder="Ingrese nombre de la parada" required="true">                            
                         </form>
                     </div>
                     
@@ -91,6 +103,7 @@
         <!-- DATA TABLE END -->
 
     </div>
+</div>
 </div>
 
 <?php endif; ?>
