@@ -25,6 +25,8 @@
 
 <?php include_once('includes/header.php');?>
 
+<div>
+<div class="admin_background"></div>
 <div class="container">
     <div class="row">
 
@@ -34,8 +36,17 @@
             <!-- CARD START -->
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Manejador de compañias de transporte</h4>
-                    <a href="crear-compania.php" class="btn btn-primary btn-m">Crear</a>
+                    <!-- title -->
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Manejador de compañias de transporte</h4> 
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
+            
+                    <div class="btn_ver_empresa text-end" style="margin-top: 5px; margin-bottom: 5px;">
+                        <a href="crear-compania.php" class="btn" role="button">Crear</a>
+                    </div>
                     
                     <div class="data-tables">
                         <table class="table text-center">
@@ -77,6 +88,7 @@
         <!-- DATA TABLE END -->
 
     </div>
+</div>
 </div>
 
 <?php endif; ?>

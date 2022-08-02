@@ -37,8 +37,18 @@
             <!-- CARD START -->
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Manejador de Usuarios</h4>
-                    <a href="crear-usuario.php" class="btn btn-primary btn-m">Create</a>
+                    <!-- title -->
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Manejador de Usuarios</h4>
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
+                    
+                    <div class="btn_ver_empresa text-end" style="margin-top: 5px; margin-bottom: 10px;">
+                        <a href="crear-usuario.php" class="btn" role="button">Create</a>
+                    </div>
+                    
                     
                     <div class="data-tables">
                         <table class="table text-center">

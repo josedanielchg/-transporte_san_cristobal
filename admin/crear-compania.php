@@ -29,14 +29,23 @@
 
 <?php include_once('includes/header.php');?>
 
+<div>
+<div class="admin_background"></div>
 <div class="container">
     <div class="row">
         <!-- BASIC FORM START -->
         <div class="col-12 mt-5">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Crear una compañia de transporte</h4>
-                    <form action="#" method="POST" name="create_company">
+                    <!-- title -->
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Crear una compañia de transporte</h4>
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
+                    
+                    <form action="#" method="POST" name="create_company" class="row g-3 form-create_user create_company">
 
                         <!-- Nombre -->
                         <div class="form-group">
@@ -61,7 +70,9 @@
                                 required><?php if($repopulate) echo $_POST['description'] ?></textarea>
                         </div>
                         
-                        <input type="submit" value="Enviar" class="btn btn-primary mt-4 pr-4 pl-4" name="create_company">
+                        <div class="search-form__submit-bttn text-center">
+                            <button type="submit" value="Enviar" class="btn mt-4 pr-4 pl-4" name="create_company">Enviar</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -69,6 +80,7 @@
         <!-- basic form end -->
         
     </div>
+</div>
 </div>
 
 <?php endif; ?>

@@ -30,6 +30,8 @@
 
 <?php include_once('includes/header.php');?>
 
+<div>
+<div class="admin_background"></div>
 <div class="container">
     <div class="row">
 
@@ -39,13 +41,21 @@
             <!-- CARD START -->
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Manejador de Paradas</h4>
+                     <!-- title -->
+                     <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Manejador de Paradas</h4>
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
 
                     <div class="form-group" class="mb-4">
                         <form action="#" method="POST" name="create_stop">
-                            <label for="stops">Crear nueva ruta:</label>
+                            <label for="stops" style="margin-top: 5px; margin-bottom: 5px;">Crear nueva ruta:</label>
                             <input type="text" class="form-control" id="stops" name="stop" placeholder="Ingrese nombre de la parada" required="true">
-                            <input type="submit" value="Crear" class="btn btn-primary btn-m pr-4 pl-4" name="create_stop">
+                            <div class="search-form__submit-bttn text-end" style="margin-top: 5px; margin-bottom: 5px;">
+                                <button type="submit" value="Crear" class="btn mt-4 pr-4 pl-4" name="create_stop">Crear</button>
+                            </div>
                         </form>
                     </div>
                     
@@ -91,6 +101,7 @@
         <!-- DATA TABLE END -->
 
     </div>
+</div>
 </div>
 
 <?php endif; ?>
