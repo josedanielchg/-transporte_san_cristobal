@@ -32,7 +32,7 @@
 
 <div>
 <div class="admin_background"></div>
-<div class="container">
+<div class="container"  style="margin-top: 15px;">
     <div class="row">
 
         <!-- DATA TABLE START -->
@@ -49,13 +49,15 @@
                     </figure>
                     <!-- title end -->
 
-                    <div class="form-group" class="mb-4">
+                    <div class="search-form__submit-bttn text-end">
+                        <button type="submit" value="Crear" class="btn mt-4 pr-4 pl-4" name="create_stop">Crear</button>
+                    </div>
+
+
+                    <div class="form-group" class="mb-4" style="margin-top: 5px; margin-bottom: 30px;">
                         <form action="#" method="POST" name="create_stop">
                             <label for="stops" style="margin-top: 5px; margin-bottom: 5px;">Crear nueva ruta:</label>
-                            <input type="text" class="form-control" id="stops" name="stop" placeholder="Ingrese nombre de la parada" required="true">
-                            <div class="search-form__submit-bttn text-end" style="margin-top: 5px; margin-bottom: 5px;">
-                                <button type="submit" value="Crear" class="btn mt-4 pr-4 pl-4" name="create_stop">Crear</button>
-                            </div>
+                            <input type="text" class="form-control" id="stops" name="stop" placeholder="Ingrese nombre de la parada" required="true">                            
                         </form>
                     </div>
                     

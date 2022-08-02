@@ -28,14 +28,21 @@
 
 <div>
 <div class="admin_background"></div>
-<div class="container">
+<div class="container" style="margin-top: 15px;">
     <div class="row">
         <!-- BASIC FORM START -->
         <div class="col-12 mt-5">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Editar Usuario</h4>
-                    <form action="#" method="POST" name="update_user">
+                    <!-- title -->
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Editar Usuario</h4>
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
+                    
+                    <form action="#" method="POST" name="update_user"  class="row g-3 form-create_user update_user">
 
                         <!-- Nombre -->
                         <div class="form-group">
@@ -119,7 +126,9 @@
 
                         <input type="hidden" class="form-control" id="user_id" name="user_id" value="<?php echo $_GET['edit_id'] ?>" required="true">
                         
-                        <input type="submit" value="Enviar" class="btn btn-primary mt-4 pr-4 pl-4" name="update_user">
+                        <div class="search-form__submit-bttn text-center">
+                            <button type="submit" value="Enviar" class="btn mt-4 pr-4 pl-4" name="update_user">Enviar</button>
+                        </div>
                     </form>
                 </div>
             </div>

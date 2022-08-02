@@ -27,8 +27,7 @@
 
 <div>
 <div class="admin_background"></div>
-
-<div class="container">
+<div class="container"  style="margin-top: 15px;">
 
     <div class="row">
         <!-- DATA TABLE START -->
@@ -37,8 +36,18 @@
             <!-- CARD START -->
             <div class="card">
                 <div class="card-body">
-                    <h4 class="header-title">Manejador de Rutas</h4>
-                    <a href="crear-ruta.php" class="btn btn-primary btn-m">Create</a>
+                    <!-- title -->
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <h4 class="header-title">Manejador de Rutas</h4>
+                        </blockquote>
+                    </figure>
+                    <!-- title end -->
+                    
+                    <div class="btn_ver_empresa text-end" style="margin-top: 5px; margin-bottom: 15px;">
+                        <a href="crear-ruta.php" class="btn" role="button">Create</a>
+                    </div>
+                    
                     
                     <div class="data-tables">
                         <table class="table text-center">
