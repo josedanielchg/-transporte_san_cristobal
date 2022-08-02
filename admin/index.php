@@ -61,7 +61,7 @@
                     <input type="password" id="password" class="form-control" name="password" placeholder="Password">
                 </div>
                 <div class="col-12  text-center">
-                    <button type="submit" class="btn btn-outline-light" name="login">acceso</button>
+                    <button type="submit" class="btn btn-outline-light" name="login">Acceso</button>
                 </div>
             </form>
             <!-- form end -->

@@ -24,8 +24,9 @@ h1,h2,h3,h4,h5{
     position: fixed;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
-    object-fit: cover;
+    z-index: -100;
+    top: 0;
+    left: 0;
 }
 
 .search-form__form-container{
@@ -69,6 +70,7 @@ h1,h2,h3,h4,h5{
     box-shadow: 0 0 10px rgb(0 0 0 / 60%);
     margin-bottom: 24px;
     padding: 16px 0;
+    background-color: #ffffff;
 }
 
 .menu__logo{
