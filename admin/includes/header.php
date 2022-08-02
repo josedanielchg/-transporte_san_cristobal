@@ -21,7 +21,7 @@
 
 <!-- body -->
 <body>
-<script src="../bootstrap-5.2.0-dist/js/bootstrap.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
 <script src="../js/jquery.min.js"></script>
 
 <?php if(!isset($menu_not_required) ): ?>

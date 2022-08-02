@@ -9,7 +9,7 @@
                 <div class="col">
                     <div class="container">
                         <a class="navbar-brand" href="index.php">
-                            <img src="img/logo.png" alt="" class="menu__logo">
+                            <img src="assets/images/logo.png" alt="" class="menu__logo">
                             Transporte San Cristóbal
                         </a>
                     </div>
@@ -26,7 +26,7 @@
                             <a class="nav-link" href="opiniones.php">Dejanos tú opinión</a>
                         </li>
                         <li class="nav-item menu_links-items">
-                            <a class="nav-link" href="admin">administracion</a>
+                            <a class="nav-link" href="admin">Administración</a>
                         </li>
                     </ul>
                 </div>

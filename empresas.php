@@ -1,8 +1,9 @@
 <?php
     include_once('config/global.php');
+    include_once('config/dbconnection.php');
 
-    // TODO: change "Empresa" in title from the actual name of the company with php dynamically
-    $title = "Empresa - " . SITE_TITLE;
+    $title = "Empresas - " . SITE_TITLE;
+    $res = mysqli_query($con,"SELECT * FROM companies ORDER BY id");
 ?>
 
 <?php include_once('includes/header.php');?>
@@ -14,27 +15,19 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Empresa</th>
-                <th scope="col"> </th>
+                <th scope="col">Empresas:</th>
+                <th scope="col"></th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">Jacob Jacob</th>
-                <td class="btn_ver_empresa"><a class="btn" href="empresa.php" role="button">Ver</a></td>
-            </tr>
-            <tr>
-                <th scope="row">Thornton San Pedro</th>
-                <td class="btn_ver_empresa"><a class="btn" href="empresa.php" role="button">Ver</a></td>
-            </tr>
-            <tr>
-                <th scope="row">Thornton San Pedro</th>
-                <td class="btn_ver_empresa"><a class="btn" href="empresa.php" role="button">Ver</a></td>
-            </tr>
-            <tr>
-                <th scope="row">Thornton San Pedro</th>
-                <td class="btn_ver_empresa"><a class="btn" href="empresa.php" role="button">Ver</a></td>
-            </tr>
+            <?php while ( $row = mysqli_fetch_array($res) ): ?>
+                <tr>
+                    <th scope="row"><?php echo $row['name']; ?></th>
+                    <td class="btn_ver_empresa" style="text-align: right;">
+                        <a class="btn" href="empresa.php?id=<?php echo $row['id'];?>" role="button">Ver más</a>
+                    </td>
+                </tr>
+            <?php endwhile; ?>
         </tbody>
     </table>
 </div>
