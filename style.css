@@ -72,7 +72,6 @@ h1,h2,h3,h4,h5{
 
 .menu {
     box-shadow: 0 0 10px rgb(0 0 0 / 60%);
-    margin-bottom: 24px;
     padding: 16px 0;
     background-color: #ffffff;
 }
@@ -235,6 +234,11 @@ h1,h2,h3,h4,h5{
     background: #1d0764;
     padding: 40px;
     border-radius: 15px;
+    font-size: 15px;
+}
+
+.login__body-col label{
+    font-size: 15px;
 }
 
 .go-back a{
