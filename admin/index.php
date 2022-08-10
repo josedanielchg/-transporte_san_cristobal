@@ -19,7 +19,7 @@
         //If user credentials are right, then redirect
         if($res>0){
             $_SESSION['tmsc_id'] = $res['id'];
-            header('location:dashboard.php');
+            header('location:comentarios.php');
         }
         else{
             $login_error = true;

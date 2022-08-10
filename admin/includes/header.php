@@ -10,12 +10,6 @@
     <title><?php echo $title ?? SITE_TITLE; ?></title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="../style.css" type="text/css">
-
-    <!-- TODO: Add styles.css -->
-    <!-- TODO: Add main.js -->
-    <!-- TODO: Add fonts (Roboto) -->
-    <!-- TODO: Add icons source -->
-    <!-- TODO: Add favicon -->
 </head>
 <!-- End head -->
 

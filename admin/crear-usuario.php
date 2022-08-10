@@ -116,7 +116,7 @@
                         </div>
                         
                         <div class="search-form__submit-bttn">
-                            <button type="submit" value="Enviar" class="btn mt-4 pr-4 pl-4" name="create_user">Buscar</button>
+                            <button type="submit" value="Enviar" class="btn mt-4 pr-4 pl-4" name="create_user">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -129,9 +129,6 @@
 </div>
 
 <?php endif; ?>
-
-<!-- TODO: Añadir footer aquí -->
-
 
 
 <!-- ================================ -->
@@ -155,7 +152,7 @@
         }
 
         // Insert into Database
-        $query = mysqli_query($connection, "INSERT INTO  users(username, email, password, role_id) value('$username','$email','$password','$role_id')");
+        $query = mysqli_query($connection, "INSERT INTO  users(name, lastname, username, email, password, role_id) value('$name','$lastname','$username','$email','$password','$role_id')");
         
         if ($query):
             echo '<script>alert("Usuario creado exitosamente")</script>';
